@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:jh_debug/jh_debug.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   jhDebugMain(

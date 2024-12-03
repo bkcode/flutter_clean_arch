@@ -44,7 +44,11 @@ dependencies:
   dio: ^5.7.0 # 网络请求
   flutter_screenutil: ^5.9.3 # 屏幕适配
   jh_debug: ^2.0.1 # 日志打印
-  intl: any
+  intl: any # 国际化
+  package_info_plus: ^8.1.1 # app相关信息获取
+  device_info_plus: ^11.1.1 # 设备信息获取
+  shared_preferences: ^2.3.3 # 持久性存储
+  synchronized: ^3.3.0+3 # 同步锁
 
 
 dev_dependencies:
