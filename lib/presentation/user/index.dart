@@ -7,11 +7,8 @@ class UserScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('User页面'),
-      ),
-      body: const Center(child: Text("User"),),
+    return const Scaffold(
+      body: Center(child: Text("User"),),
     );
   }
 }
