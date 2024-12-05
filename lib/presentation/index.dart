@@ -17,6 +17,14 @@ class IndexScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Text("Index"),
+            ElevatedButton(onPressed: () {
+              var a = 0;
+
+              print(123124123/a);
+
+
+              throw Exception("error");
+            }, child: const Text("error")),
             ElevatedButton(
                 onPressed: () => {context.router.push(const SecondRoute())},
                 child: const Text("toSecond"))
