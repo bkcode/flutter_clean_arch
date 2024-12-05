@@ -7,7 +7,7 @@ part of 'model.dart';
 // **************************************************************************
 
 String _$appRootStateNotificationHash() =>
-    r'4721a4fb54d6fd0005153950c9bdf3bf106c4add';
+    r'2ae25ca855c7b79b8521682062373a08bc0d5756';
 
 /// See also [AppRootStateNotification].
 @ProviderFor(AppRootStateNotification)

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_clean_arch/themes/theme_blue.dart';
+import 'package:flutter_clean_arch/themes/index_theme.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'model.g.dart';
@@ -36,12 +36,11 @@ class AppRootState {
 class AppRootStateNotification extends _$AppRootStateNotification {
   @override
   AppRootState build() {
-    const materialTheme = MaterialTheme(TextTheme());
     return AppRootState(
       locale: Locale('zh', 'CH'),
       themeMode: ThemeMode.system,
-      lightTheme: materialTheme.light(),
-      darkTheme: materialTheme.dark(),
+      lightTheme: themeBlueLight,
+      darkTheme: themeBlueDark,
     );
   }
 
@@ -51,5 +50,12 @@ class AppRootStateNotification extends _$AppRootStateNotification {
 
   void setLocale(Locale locale) async {
     state = state.copyWith(locale: locale);
+  }
+
+  void setThemeData({required ThemeData lightTheme, required ThemeData darkTheme}) async {
+    state = state.copyWith(
+      lightTheme: lightTheme,
+      darkTheme: darkTheme,
+    );
   }
 }

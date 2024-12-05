@@ -1,10 +1,9 @@
+part of 'index_theme.dart';
 
-import 'package:flutter/material.dart';
-
-class MaterialTheme {
+class BlueTheme {
   final TextTheme textTheme;
 
-  const MaterialTheme(this.textTheme);
+  const BlueTheme(this.textTheme);
 
   static ColorScheme lightScheme() {
     return const ColorScheme(
@@ -351,39 +350,5 @@ class MaterialTheme {
   List<ExtendedColor> get extendedColors => [];
 }
 
-class ExtendedColor {
-  final Color seed, value;
-  final ColorFamily light;
-  final ColorFamily lightHighContrast;
-  final ColorFamily lightMediumContrast;
-  final ColorFamily dark;
-  final ColorFamily darkHighContrast;
-  final ColorFamily darkMediumContrast;
-
-  const ExtendedColor({
-    required this.seed,
-    required this.value,
-    required this.light,
-    required this.lightHighContrast,
-    required this.lightMediumContrast,
-    required this.dark,
-    required this.darkHighContrast,
-    required this.darkMediumContrast,
-  });
-}
-
-class ColorFamily {
-  const ColorFamily({
-    required this.color,
-    required this.onColor,
-    required this.colorContainer,
-    required this.onColorContainer,
-  });
-
-  final Color color;
-  final Color onColor;
-  final Color colorContainer;
-  final Color onColorContainer;
-}
-
-
+final ThemeData themeBlueLight = const BlueTheme(TextTheme()).light();
+final ThemeData themeBlueDark = const BlueTheme(TextTheme()).dark();
