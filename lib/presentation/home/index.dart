@@ -15,6 +15,9 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text(AppLocalizations.of(context).helloWorld),
             Text(AppLocalizations.of(context).language),
+            ElevatedButton(onPressed: (){
+              context.router.pushNamed('/authorized');
+            }, child: const Text("Go to Authorized Page")),
           ],
         ),
       ),

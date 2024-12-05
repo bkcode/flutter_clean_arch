@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 
 @RoutePage()
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({super.key});
+  const LoginScreen({super.key, required this.onResult});
+
+  final void Function(bool success) onResult;
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +13,16 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Login'),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Login"),
+            ElevatedButton(
+              onPressed: () {
+                onResult(true);
+              },
+              child: const Text('Login'),
+            ),
           ],
         ),
       ),
