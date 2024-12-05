@@ -87,7 +87,7 @@ class Request {
     Object? data,
     Map<String, dynamic>? queryParameters,
     CancelToken? cancelToken,
-  }) {
+  }) async {
     return safeRequest<T>(
       url,
       data: data,
@@ -104,7 +104,7 @@ class Request {
     Object? data,
     Map<String, dynamic>? queryParameters,
     CancelToken? cancelToken,
-  }) {
+  }) async {
     return safeRequest<T>(
       url,
       data: data,
@@ -121,7 +121,7 @@ class Request {
     Object? data,
     Map<String, dynamic>? queryParameters,
     CancelToken? cancelToken,
-  }) {
+  })  async {
     return safeRequest<T>(
       url,
       data: data,
