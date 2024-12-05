@@ -1,8 +1,71 @@
 {
+  "languageTip": "Current Language",
   "language": "English",
   "title": "Flutter Clean Arch",
   "helloWorld": "Hello World!",
+  "themeTip": "Current Theme",
   "darkMode": "Dark Mode",
   "lightMode": "Light Mode",
-  "autoMode": "Auto Mode"
+  "autoMode": "Auto Mode",
+  "goAuthorizedPage": "Go to Authorized Page",
+  "authorizedPageTitle": "Authorized Page",
+  "login": "Login",
+  "logout": "Logout",
+  "variable": "Variable passed to the multi-language rendering: {variable}",
+  "@variable": {
+    "placeholders": {
+      "variable": {
+        "type": "String",
+        "example": "Hello World!"
+      }
+    }
+  },
+  "applesTip": "Plural form processing of multi-language",
+  "apples": "{count,plural, =0{No apples} =1{One apple} other{{count} apples}}",
+  "@apples": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "genderTip": "Greet users based on their gender in multiple languages.",
+  "gender": "{gender, select, male {Hello, Mr. {name}} female {Hello, Ms. {name}} other {Hello, {name}}}",
+  "@greetUser": {
+    "description": "Greet users based on their gender.",
+    "placeholders": {
+      "gender": {
+        "type": "String",
+        "example": "male"
+      },
+      "name": {
+        "type": "String",
+        "example": "John"
+      }
+    }
+  },
+  "today": "Today is {date}",
+  "@today": {
+    "description": "A message displaying today's date.",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "numberOfDataPoints": "Number of data points: {value}",
+  "@numberOfDataPoints": {
+    "description": "A message with a formatted int parameter",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "compactCurrency",
+        "optionalParameters": {
+          "decimalDigits": 2
+        }
+      }
+    }
+  }
 }

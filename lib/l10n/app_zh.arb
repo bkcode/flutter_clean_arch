@@ -1,8 +1,71 @@
 {
+  "languageTip": "当前语言",
   "language": "简体中文",
   "title": "flutter 整洁架构",
   "helloWorld": "你好世界！",
+  "themeTip": "当前主题",
   "darkMode": "黑暗模式",
   "lightMode": "光明模式",
-  "autoMode": "跟随系统"
+  "autoMode": "跟随系统",
+  "goAuthorizedPage": "前往需授权页面",
+  "authorizedPageTitle": "授权页面",
+  "login": "登录",
+  "logout": "登出",
+  "variable": "多语言渲染传入变量：{variable}",
+  "@variable": {
+    "placeholders": {
+      "variable": {
+        "type": "String",
+        "example": "Hello World!"
+      }
+    }
+  },
+  "applesTip": "多语言的复数形式处理",
+  "apples": "{count,plural, other{{count}个苹果}}",
+  "@apples": {
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "1"
+      }
+    }
+  },
+  "genderTip": "多语言中根据用户的性别向其致意。",
+  "gender": "{gender, select, male {你好，{name} 先生} female {你好，{name} 女士} other {你好, {name}}}",
+  "@greetUser": {
+    "description": "根据用户的性别向其致意。",
+    "placeholders": {
+      "gender": {
+        "type": "String",
+        "example": "male"
+      },
+      "name": {
+        "type": "String",
+        "example": "John"
+      }
+    }
+  },
+  "today": "今天是{date}",
+  "@today": {
+    "description": "A message displaying today's date.",
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMd"
+      }
+    }
+  },
+  "numberOfDataPoints": "数字格式化: {value}",
+  "@numberOfDataPoints": {
+    "description": "A message with a formatted int parameter",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "format": "compactCurrency",
+        "optionalParameters": {
+          "decimalDigits": 2
+        }
+      }
+    }
+  }
 }

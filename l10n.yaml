@@ -10,3 +10,7 @@ template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
 
 nullable-getter: false
+
+# When enabled, the parser ignores text included in a pair of single quotes. If you want to use a single quote in the text, you need to use pairs of single quotes to escape it.
+# see https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization#escaping-syntax
+use-escaping: true

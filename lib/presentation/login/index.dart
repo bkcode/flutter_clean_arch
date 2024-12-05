@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_arch/utils/tool/sp_util.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 @RoutePage()
 class LoginScreen extends StatelessWidget {
@@ -12,7 +13,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: Text(AppLocalizations.of(context).login),
       ),
       body: Center(
         child: Column(
@@ -23,7 +24,7 @@ class LoginScreen extends StatelessWidget {
                 SpUtil.setData('isLogin', true);
                 onResult(true);
               },
-              child: const Text('Login'),
+              child: Text(AppLocalizations.of(context).login),
             ),
           ],
         ),
