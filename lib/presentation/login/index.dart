@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_arch/utils/tool/sp_util.dart';
 
 @RoutePage()
 class LoginScreen extends StatelessWidget {
@@ -19,6 +20,7 @@ class LoginScreen extends StatelessWidget {
           children: [
             ElevatedButton(
               onPressed: () {
+                SpUtil.setData('isLogin', true);
                 onResult(true);
               },
               child: const Text('Login'),
