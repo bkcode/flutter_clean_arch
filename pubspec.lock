@@ -370,6 +370,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  fluttertoast:
+    dependency: "direct main"
+    description:
+      name: fluttertoast
+      sha256: "95f349437aeebe524ef7d6c9bde3e6b4772717cf46a0eb6a3ceaddc740b297cc"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "8.2.8"
   freezed_annotation:
     dependency: transitive
     description:
@@ -506,6 +514,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "4.0.0"
+  logger:
+    dependency: "direct main"
+    description:
+      name: logger
+      sha256: be4b23575aac7ebf01f225a241eb7f6b5641eeaf43c6a8613510fc2f8cf187d1
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "2.5.0"
   logging:
     dependency: transitive
     description:

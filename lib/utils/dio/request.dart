@@ -6,6 +6,7 @@ import 'package:dio/io.dart';
 import 'package:flutter_clean_arch/config/app_config.dart';
 import 'package:flutter_clean_arch/utils/dio/interceptors/header_interceptor.dart';
 import 'package:flutter_clean_arch/utils/dio/interceptors/log_interceptor.dart';
+import 'package:flutter_clean_arch/utils/index.dart';
 
 Dio _initDio() {
   BaseOptions baseOptions = BaseOptions(
@@ -39,8 +40,7 @@ Dio _initDio() {
   return dioClient;
 }
 
-Future<T> safeRequest<T>(
-  String url, {
+Future<T> safeRequest<T>(String url, {
   Object? data,
   Options? options,
   Map<String, dynamic>? queryParameters,
@@ -49,15 +49,15 @@ Future<T> safeRequest<T>(
   try {
     return Request.dioClient
         .request(
-          url,
-          data: data,
-          queryParameters: queryParameters,
-          options: options,
-          cancelToken: cancelToken,
-        )
+      url,
+      data: data,
+      queryParameters: queryParameters,
+      options: options,
+      cancelToken: cancelToken,
+    )
         .then((data) => jsonDecode(data.data as String) as T);
   } catch (e) {
-    print(e);
+    LogUtil.e(e);
     rethrow;
   }
 }
@@ -66,8 +66,7 @@ class Request {
   static Dio dioClient = _initDio();
 
   /// get request
-  static Future<T> get<T>(
-    String url, {
+  static Future<T> get<T>(String url, {
     Options? options,
     Map<String, dynamic>? queryParameters,
     CancelToken? cancelToken,
@@ -81,8 +80,7 @@ class Request {
   }
 
   /// post request
-  static Future<T> post<T>(
-    String url, {
+  static Future<T> post<T>(String url, {
     Options? options,
     Object? data,
     Map<String, dynamic>? queryParameters,
@@ -98,8 +96,7 @@ class Request {
   }
 
   /// put request
-  static Future<T> put<T>(
-    String url, {
+  static Future<T> put<T>(String url, {
     Options? options,
     Object? data,
     Map<String, dynamic>? queryParameters,
@@ -115,13 +112,12 @@ class Request {
   }
 
   /// delete request
-  static Future<T> delete<T>(
-    String url, {
+  static Future<T> delete<T>(String url, {
     Options? options,
     Object? data,
     Map<String, dynamic>? queryParameters,
     CancelToken? cancelToken,
-  })  async {
+  }) async {
     return safeRequest<T>(
       url,
       data: data,

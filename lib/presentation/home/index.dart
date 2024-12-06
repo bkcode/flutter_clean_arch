@@ -1,7 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_clean_arch/utils/tool/tips_util.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import '../app_root/model.dart';
@@ -51,6 +53,13 @@ class HomeScreen extends ConsumerWidget {
 
             // number
             Text(locale.numberOfDataPoints(12345677)),
+
+            ElevatedButton(
+                onPressed: () {
+                  Tips.info("Toast Test",gravity: ToastGravity.CENTER);
+                },
+                child: const Text("Toast")),
+
             ElevatedButton(
               onPressed: () {
                 context.router.pushNamed('/authorized');
