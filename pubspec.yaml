@@ -48,7 +48,8 @@ dependencies:
   device_info_plus: ^11.1.1 # 设备信息获取
   shared_preferences: ^2.3.3 # 持久性存储
   synchronized: ^3.3.0+3 # 同步锁
-  auto_route: ^9.2.2
+  auto_route: ^9.2.2 # 路由
+  permission_handler: ^11.3.1 # 权限申请
 
 
 dev_dependencies:
