@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_clean_arch/config/app_config.dart';
+import 'package:flutter_clean_arch/utils/dio/error_process.dart';
 import 'package:flutter_clean_arch/utils/index.dart';
 
 class LogsInterceptors extends InterceptorsWrapper {
@@ -26,9 +27,9 @@ class LogsInterceptors extends InterceptorsWrapper {
   @override
   onError(DioException err, ErrorInterceptorHandler handler) async {
     if (AppConfig.debug) {
-      LogUtil.d('Request-Error: ${err.error}');
+      final errorDesc = DioErrorUtil.formatError(err);
+      LogUtil.e(errorDesc);
     }
-
     return handler.next(err);
   }
 }

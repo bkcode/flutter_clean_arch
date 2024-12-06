@@ -31,14 +31,6 @@ class _EagerInitializationState extends ConsumerState<_EagerInitialization> {
 
   @override
   Widget build(BuildContext context) {
-    // 只在非生产环境下打印 DEBUG 日志
-    LogUtil.d("This is a debug message.");
-
-    // 打印其他级别的日志
-    LogUtil.i("This is an info message.");
-    LogUtil.w("This is a warning message.");
-    LogUtil.e("This is an error message.");
-
     appEnv.init();
     SpUtil.getInstance();
     return widget.child;
