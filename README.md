@@ -7,6 +7,11 @@ management applications. The application is built with a focus on clean code and
 making it easy to maintain and
 extendable. It uses Riverpod for state management.
 
+## Video
+
+[![Watch the video](examplate.mp4)](examplate)
+
+
 ## Key features
 
 - [x] The structure of the application follows a clean Make the code base easy to navigate and understand.
