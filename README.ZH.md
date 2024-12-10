@@ -7,7 +7,7 @@
 
 ## 视频预览
 
-[![Watch the video](examplate.mp4)](examplate)
+https://github.com/JasonYHZ/flutter_clean_arch/raw/refs/heads/main/examplate.mp4
 
 ## 主要特点
 

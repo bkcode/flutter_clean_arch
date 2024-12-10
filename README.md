@@ -9,7 +9,7 @@ extendable. It uses Riverpod for state management.
 
 ## Video
 
-[![Watch the video](examplate.mp4)](examplate)
+https://github.com/JasonYHZ/flutter_clean_arch/raw/refs/heads/main/examplate.mp4
 
 
 ## Key features
