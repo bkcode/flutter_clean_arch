@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_clean_arch/routes/app_router.gr.dart';
+import 'package:flutter_clean_arch/routes/modal_bottom_sheet_autoroute.dart';
 
 import 'guards/authorized_guard.dart';
 
@@ -22,7 +23,13 @@ class AppRouter extends RootStackRouter {
         ),
         AutoRoute(path: '/login', page: LoginRoute.page),
         AutoRoute(
-            path: '/authorized', page: AuthorizedRoute.page, guards: [AuthGuard()]),
+            path: '/authorized',
+            page: AuthorizedRoute.page,
+            guards: [AuthGuard()]),
+        ModalBottomSheetAutoRoute(
+            path: '/_bottom-modal',
+            page: BottomModalRoute.page,
+            barrierDismissible: false),
       ];
 
   @override

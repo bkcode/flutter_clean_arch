@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
+import '../../routes/app_router.gr.dart';
 import '../app_root/model.dart';
 
 @RoutePage()
@@ -56,7 +57,7 @@ class HomeScreen extends ConsumerWidget {
 
             ElevatedButton(
                 onPressed: () {
-                  Tips.info("Toast Test",gravity: ToastGravity.CENTER);
+                  Tips.info("Toast Test", gravity: ToastGravity.CENTER);
                 },
                 child: const Text("Toast")),
 
@@ -68,6 +69,20 @@ class HomeScreen extends ConsumerWidget {
                 locale.goAuthorizedPage,
               ),
             ),
+
+            ElevatedButton(
+                onPressed: () {
+                  context.router.push(BottomModalRoute(
+                      child: Scaffold(
+                    body: Center(
+                      child: ElevatedButton(
+                          onPressed: () {
+                            context.router.back();
+                          }, child: const Text('Close')),
+                    ),
+                  )));
+                },
+                child: const Text('showBottomSheet')),
           ],
         ),
       ),
