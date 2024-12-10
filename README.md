@@ -7,10 +7,6 @@ management applications. The application is built with a focus on clean code and
 making it easy to maintain and
 extendable. It uses Riverpod for state management.
 
-## Video
-
-https://github.com/JasonYHZ/flutter_clean_arch/raw/refs/heads/main/examplate.mp4
-
 
 ## Key features
 

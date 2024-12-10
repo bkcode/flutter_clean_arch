@@ -5,10 +5,6 @@
 这是一个脚手架类型的项目，使用Riverpod实现了简洁的架构来进行状态管理的应用程序。该应用程序以干净的代码和体系结构为重点构建，使其易于维护和
 延伸。它使用Riverpod进行状态管理。
 
-## 视频预览
-
-https://github.com/JasonYHZ/flutter_clean_arch/raw/refs/heads/main/examplate.mp4
-
 ## 主要特点
 
 - [x] 应用程序的结构遵循简洁的 使代码库易于浏览和理解。
