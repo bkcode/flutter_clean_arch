@@ -5,10 +5,16 @@
 *.swp
 .DS_Store
 .atom/
+.build/
 .buildlog/
 .history
 .svn/
+.swiftpm/
 migrate_working_dir/
+
+# Mason
+.mason/
+mason-lock.json
 
 # IntelliJ related
 *.iml
@@ -19,7 +25,8 @@ migrate_working_dir/
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
-#.vscode/
+.vscode/
+.vscode/settings.json
 
 # Flutter/Dart/Pub related
 **/doc/api/
@@ -27,9 +34,13 @@ migrate_working_dir/
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
 /build/
+
+# Web related
+lib/generated_plugin_registrant.dart
 
 # Symbolication related
 app.*.symbols
@@ -41,3 +52,23 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/app/.cxx
+
+# Enviroment files
+*.env
+*.env.default
+
+# fastlane specific
+**/fastlane/report.xml
+**/fastlane/Preview.html
+**/fastlane/screenshots
+**/fastlane/test_output
+.bundle/
+vendor/bundle/
+
+# FVM Version Cache
+.fvm/
+
+# IOS related
+# Xcode will place build artifacts here
+/ios/build

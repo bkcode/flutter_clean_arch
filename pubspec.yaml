@@ -38,21 +38,21 @@ dependencies:
   cupertino_icons: ^1.0.8
   # status manager
   hooks_riverpod: ^2.6.1
-  flutter_hooks: ^0.20.5
+  flutter_hooks: ^0.21.2
   riverpod_annotation: ^2.6.1
 
-  dio: ^5.7.0 # 网络请求
+  dio: ^5.8.0+1 # 网络请求
   flutter_screenutil: ^5.9.3 # 屏幕适配
   intl: any # 国际化
-  package_info_plus: ^8.1.1 # app相关信息获取
-  device_info_plus: ^11.1.1 # 设备信息获取
-  shared_preferences: ^2.3.3 # 持久性存储
-  synchronized: ^3.3.0+3 # 同步锁
-  auto_route: ^9.2.2 # 路由
-  permission_handler: ^11.3.1 # 权限申请
-  fluttertoast: ^8.2.8 # toast
+  package_info_plus: ^8.3.0 # app相关信息获取
+  device_info_plus: ^11.4.0 # 设备信息获取
+  shared_preferences: ^2.5.3 # 持久性存储
+  synchronized: ^3.3.1 # 同步锁
+  auto_route: ^10.0.1 # 路由
+  permission_handler: ^12.0.0+1 # 权限申请
+  fluttertoast: ^8.2.12 # toast
   logger: ^2.5.0 # 日志
-  freezed_annotation: ^2.4.4
+  freezed_annotation: ^3.0.0
   json_annotation: ^4.9.0
 
 
@@ -65,14 +65,14 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^4.0.0
-  riverpod_generator: ^2.6.3
-  build_runner: ^2.4.13
-  custom_lint: ^0.7.0
-  riverpod_lint: ^2.6.3
-  auto_route_generator: ^9.0.0
-  freezed: ^2.5.7
-  json_serializable: ^6.9.0
+  flutter_lints: ^5.0.0
+  riverpod_generator: ^2.6.5
+  build_runner: ^2.4.15
+  custom_lint: ^0.7.5
+  riverpod_lint: ^2.6.5
+  auto_route_generator: ^10.0.1
+  freezed: ^3.0.6
+  json_serializable: ^6.9.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

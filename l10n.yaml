@@ -1,4 +1,5 @@
 # Flutter Localizations Config File
+synthetic-package: false
 
 # Where input files are located
 arb-dir: lib/l10n

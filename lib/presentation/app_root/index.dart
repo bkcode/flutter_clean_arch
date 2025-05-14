@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_clean_arch/config/app_config.dart';
+import 'package:flutter_clean_arch/l10n/app_localizations.dart';
 import 'package:flutter_clean_arch/presentation/app_root/model.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
