@@ -23,6 +23,7 @@ final userRepositoryNotifierProvider = AutoDisposeNotifierProvider<
 );
 
 typedef _$UserRepositoryNotifier = AutoDisposeNotifier<UserRepository>;
+
 String _$userUseCaseNotifierHash() =>
     r'a5f39efb06cae24088909e03e104570fa2594e24';
 

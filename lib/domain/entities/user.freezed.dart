@@ -21,12 +21,19 @@ User _$UserFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$User {
   int get id => throw _privateConstructorUsedError;
+
   set id(int value) => throw _privateConstructorUsedError;
+
   String get name => throw _privateConstructorUsedError;
+
   set name(String value) => throw _privateConstructorUsedError;
+
   String get email => throw _privateConstructorUsedError;
+
   set email(String value) => throw _privateConstructorUsedError;
+
   String get avatar => throw _privateConstructorUsedError;
+
   set avatar(String value) => throw _privateConstructorUsedError;
 
   /// Serializes this User to a JSON map.
@@ -42,6 +49,7 @@ mixin _$User {
 abstract class $UserCopyWith<$Res> {
   factory $UserCopyWith(User value, $Res Function(User) then) =
       _$UserCopyWithImpl<$Res, User>;
+
   @useResult
   $Res call({int id, String name, String email, String avatar});
 }
@@ -53,6 +61,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -92,6 +101,7 @@ abstract class _$$UserImplCopyWith<$Res> implements $UserCopyWith<$Res> {
   factory _$$UserImplCopyWith(
           _$UserImpl value, $Res Function(_$UserImpl) then) =
       __$$UserImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call({int id, String name, String email, String avatar});
@@ -199,15 +209,22 @@ abstract class _User implements User {
 
   @override
   int get id;
+
   set id(int value);
+
   @override
   String get name;
+
   set name(String value);
+
   @override
   String get email;
+
   set email(String value);
+
   @override
   String get avatar;
+
   set avatar(String value);
 
   /// Create a copy of User

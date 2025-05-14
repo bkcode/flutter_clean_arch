@@ -52,7 +52,8 @@ class AppRootStateNotification extends _$AppRootStateNotification {
     state = state.copyWith(locale: locale);
   }
 
-  void setThemeData({required ThemeData lightTheme, required ThemeData darkTheme}) async {
+  void setThemeData(
+      {required ThemeData lightTheme, required ThemeData darkTheme}) async {
     state = state.copyWith(
       lightTheme: lightTheme,
       darkTheme: darkTheme,

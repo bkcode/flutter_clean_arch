@@ -63,7 +63,7 @@ class HomeScreen extends ConsumerWidget {
 
             ElevatedButton(
               onPressed: () {
-                context.router.pushNamed('/authorized');
+                context.router.pushPath('/authorized');
               },
               child: Text(
                 locale.goAuthorizedPage,
@@ -78,7 +78,8 @@ class HomeScreen extends ConsumerWidget {
                       child: ElevatedButton(
                           onPressed: () {
                             context.router.back();
-                          }, child: const Text('Close')),
+                          },
+                          child: const Text('Close')),
                     ),
                   )));
                 },

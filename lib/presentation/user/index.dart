@@ -28,15 +28,17 @@ class UserScreen extends HookConsumerWidget {
         onRefresh: () => ref.refresh(getUserInfoCaseProvider.future),
         child: ListView(
           children: [
-            ElevatedButton(onPressed: () {
-              ref.invalidate(getUserInfoCaseProvider);
-            }, child: Text('get user info')),
+            ElevatedButton(
+                onPressed: () {
+                  ref.invalidate(getUserInfoCaseProvider);
+                },
+                child: Text('get user info')),
             Padding(
               padding: const EdgeInsets.all(18.0),
               child: Center(
                 child: switch (activeUser) {
-                  AsyncValue<User>(:final valueOrNull?) =>
-                    Text('${valueOrNull.toString()}--${activeUser.isLoading}--${activeUser.isRefreshing}--${activeUser.isReloading}'),
+                  AsyncValue<User>(:final valueOrNull?) => Text(
+                      '${valueOrNull.toString()}--${activeUser.isLoading}--${activeUser.isRefreshing}--${activeUser.isReloading}'),
                   AsyncValue(:final error?) => Text('Error: $error'),
                   _ => const CircularProgressIndicator(),
                 },

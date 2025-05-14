@@ -37,22 +37,22 @@ class ModalBottomSheetAutoRoute extends CustomRoute {
     bool? useSafeArea,
     String? barrierOnTapHint,
   }) : super(
-    customRouteBuilder: routeBuilderFactory(
-      initialChildSize: fixedSize ?? initialSize,
-      maxChildSize: fixedSize ?? maxSize,
-      minChildSize: fixedSize ?? minSize,
-      barrierColor: barrierColor,
-      barrierDismissible: barrierDismissible,
-      backgroundColor: backgroundColor,
-      barrierLabel: barrierLabel,
-      shape: shape,
-      isScrollControlled: isScrollControlled,
-      enableDrag: enableDrag,
-      showDragHandle: showDragHandle,
-      useSafeArea: useSafeArea,
-      barrierOnTapHint: barrierOnTapHint,
-    ),
-  );
+          customRouteBuilder: routeBuilderFactory(
+            initialChildSize: fixedSize ?? initialSize,
+            maxChildSize: fixedSize ?? maxSize,
+            minChildSize: fixedSize ?? minSize,
+            barrierColor: barrierColor,
+            barrierDismissible: barrierDismissible,
+            backgroundColor: backgroundColor,
+            barrierLabel: barrierLabel,
+            shape: shape,
+            isScrollControlled: isScrollControlled,
+            enableDrag: enableDrag,
+            showDragHandle: showDragHandle,
+            useSafeArea: useSafeArea,
+            barrierOnTapHint: barrierOnTapHint,
+          ),
+        );
 
   static CustomRouteBuilder routeBuilderFactory({
     required double initialChildSize,
@@ -85,11 +85,11 @@ class ModalBottomSheetAutoRoute extends CustomRoute {
         builder: (context) {
           return isScrollControlled ?? true
               ? ModalDraggableSheet(
-            initialChildSize: initialChildSize,
-            minChildSize: minChildSize,
-            maxChildSize: maxChildSize,
-            child: child,
-          )
+                  initialChildSize: initialChildSize,
+                  minChildSize: minChildSize,
+                  maxChildSize: maxChildSize,
+                  child: child,
+                )
               : child;
         },
       );

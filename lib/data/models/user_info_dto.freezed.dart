@@ -22,68 +22,100 @@ UserInfoDto _$UserInfoDtoFromJson(Map<String, dynamic> json) {
 mixin _$UserInfoDto {
   @JsonKey(name: 'login')
   String? get login => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'id')
   int? get id => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'node_id')
   String? get nodeId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'avatar_url')
   String? get avatarUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'gravatar_id')
   String? get gravatarId => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'url')
   String? get url => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'html_url')
   String? get htmlUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'followers_url')
   String? get followersUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'following_url')
   String? get followingUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'gists_url')
   String? get gistsUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'starred_url')
   String? get starredUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'subscriptions_url')
   String? get subscriptionsUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'organizations_url')
   String? get organizationsUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'repos_url')
   String? get reposUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'events_url')
   String? get eventsUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'received_events_url')
   String? get receivedEventsUrl => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'type')
   String? get type => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'user_view_type')
   String? get userViewType => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'site_admin')
   bool? get siteAdmin => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'name')
   String? get name => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'company')
   String? get company => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'blog')
   String? get blog => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'location')
   String? get location => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'email')
   String? get email => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'hireable')
   String? get hireable => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'bio')
   String? get bio => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'twitter_username')
   String? get twitterUsername => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'public_repos')
   int? get publicRepos => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'public_gists')
   int? get publicGists => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'followers')
   int? get followers => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'following')
   int? get following => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'created_at')
   String? get createdAt => throw _privateConstructorUsedError;
+
   @JsonKey(name: 'updated_at')
   String? get updatedAt => throw _privateConstructorUsedError;
 
@@ -102,6 +134,7 @@ abstract class $UserInfoDtoCopyWith<$Res> {
   factory $UserInfoDtoCopyWith(
           UserInfoDto value, $Res Function(UserInfoDto) then) =
       _$UserInfoDtoCopyWithImpl<$Res, UserInfoDto>;
+
   @useResult
   $Res call(
       {@JsonKey(name: 'login') String? login,
@@ -146,6 +179,7 @@ class _$UserInfoDtoCopyWithImpl<$Res, $Val extends UserInfoDto>
 
   // ignore: unused_field
   final $Val _value;
+
   // ignore: unused_field
   final $Res Function($Val) _then;
 
@@ -331,6 +365,7 @@ abstract class _$$UserInfoDtoImplCopyWith<$Res>
   factory _$$UserInfoDtoImplCopyWith(
           _$UserInfoDtoImpl value, $Res Function(_$UserInfoDtoImpl) then) =
       __$$UserInfoDtoImplCopyWithImpl<$Res>;
+
   @override
   @useResult
   $Res call(
@@ -899,99 +934,131 @@ abstract class _UserInfoDto implements UserInfoDto {
   @override
   @JsonKey(name: 'login')
   String? get login;
+
   @override
   @JsonKey(name: 'id')
   int? get id;
+
   @override
   @JsonKey(name: 'node_id')
   String? get nodeId;
+
   @override
   @JsonKey(name: 'avatar_url')
   String? get avatarUrl;
+
   @override
   @JsonKey(name: 'gravatar_id')
   String? get gravatarId;
+
   @override
   @JsonKey(name: 'url')
   String? get url;
+
   @override
   @JsonKey(name: 'html_url')
   String? get htmlUrl;
+
   @override
   @JsonKey(name: 'followers_url')
   String? get followersUrl;
+
   @override
   @JsonKey(name: 'following_url')
   String? get followingUrl;
+
   @override
   @JsonKey(name: 'gists_url')
   String? get gistsUrl;
+
   @override
   @JsonKey(name: 'starred_url')
   String? get starredUrl;
+
   @override
   @JsonKey(name: 'subscriptions_url')
   String? get subscriptionsUrl;
+
   @override
   @JsonKey(name: 'organizations_url')
   String? get organizationsUrl;
+
   @override
   @JsonKey(name: 'repos_url')
   String? get reposUrl;
+
   @override
   @JsonKey(name: 'events_url')
   String? get eventsUrl;
+
   @override
   @JsonKey(name: 'received_events_url')
   String? get receivedEventsUrl;
+
   @override
   @JsonKey(name: 'type')
   String? get type;
+
   @override
   @JsonKey(name: 'user_view_type')
   String? get userViewType;
+
   @override
   @JsonKey(name: 'site_admin')
   bool? get siteAdmin;
+
   @override
   @JsonKey(name: 'name')
   String? get name;
+
   @override
   @JsonKey(name: 'company')
   String? get company;
+
   @override
   @JsonKey(name: 'blog')
   String? get blog;
+
   @override
   @JsonKey(name: 'location')
   String? get location;
+
   @override
   @JsonKey(name: 'email')
   String? get email;
+
   @override
   @JsonKey(name: 'hireable')
   String? get hireable;
+
   @override
   @JsonKey(name: 'bio')
   String? get bio;
+
   @override
   @JsonKey(name: 'twitter_username')
   String? get twitterUsername;
+
   @override
   @JsonKey(name: 'public_repos')
   int? get publicRepos;
+
   @override
   @JsonKey(name: 'public_gists')
   int? get publicGists;
+
   @override
   @JsonKey(name: 'followers')
   int? get followers;
+
   @override
   @JsonKey(name: 'following')
   int? get following;
+
   @override
   @JsonKey(name: 'created_at')
   String? get createdAt;
+
   @override
   @JsonKey(name: 'updated_at')
   String? get updatedAt;

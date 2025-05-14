@@ -4,10 +4,8 @@ import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:dio/io.dart';
 import 'package:flutter_clean_arch/config/app_config.dart';
-import 'package:flutter_clean_arch/utils/dio/error_process.dart';
 import 'package:flutter_clean_arch/utils/dio/interceptors/header_interceptor.dart';
 import 'package:flutter_clean_arch/utils/dio/interceptors/log_interceptor.dart';
-import 'package:flutter_clean_arch/utils/index.dart';
 
 Dio _initDio() {
   BaseOptions baseOptions = BaseOptions(
@@ -57,7 +55,7 @@ Future<T> safeRequest<T>(
       cancelToken: cancelToken,
     );
     return jsonDecode(response.data as String) as T;
-  } on Exception catch (e) {
+  } on Exception {
     rethrow;
   }
 }

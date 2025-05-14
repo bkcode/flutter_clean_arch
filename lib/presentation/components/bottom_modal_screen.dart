@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_clean_arch/routes/modal_draggable_sheet.dart';
 
 @RoutePage()
-class BottomModalScreen extends StatelessWidget with DraggableScrollControllerMixin {
+class BottomModalScreen extends StatelessWidget
+    with DraggableScrollControllerMixin {
   const BottomModalScreen({super.key, required this.child});
 
   final Widget child;

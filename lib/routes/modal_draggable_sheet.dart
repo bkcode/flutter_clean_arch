@@ -23,7 +23,8 @@ class ModalDraggableSheet extends StatelessWidget {
       minChildSize: minChildSize,
       maxChildSize: maxChildSize,
       expand: false,
-      builder: (context, ScrollController scrollController) => DraggableScrollController(
+      builder: (context, ScrollController scrollController) =>
+          DraggableScrollController(
         scrollController: scrollController,
         child: child,
       ),
@@ -53,10 +54,13 @@ class DraggableScrollController extends InheritedWidget {
 
   static ScrollController? of(BuildContext context, {bool listen = false}) {
     if (listen) {
-      return context.dependOnInheritedWidgetOfExactType<DraggableScrollController>()?.scrollController;
+      return context
+          .dependOnInheritedWidgetOfExactType<DraggableScrollController>()
+          ?.scrollController;
     }
-    final widget = context.getElementForInheritedWidgetOfExactType<DraggableScrollController>()?.widget
-    as DraggableScrollController?;
+    final widget = context
+        .getElementForInheritedWidgetOfExactType<DraggableScrollController>()
+        ?.widget as DraggableScrollController?;
     return widget?.scrollController;
   }
 
@@ -68,12 +72,15 @@ class DraggableScrollController extends InheritedWidget {
 
 /// mixin to simplify retrieving the scrollController on stateful widget that may be
 /// inserted inside a [ModalDraggableSheet]
-mixin DraggableScrollControllerStateMixin<T extends StatefulWidget> on State<T> {
-  ScrollController? get scrollController => DraggableScrollController.of(context);
+mixin DraggableScrollControllerStateMixin<T extends StatefulWidget>
+    on State<T> {
+  ScrollController? get scrollController =>
+      DraggableScrollController.of(context);
 }
 
 /// mixin to simplify retrieving the scrollController on stateless widget that may be
 /// inserted inside a [ModalDraggableSheet]
 mixin DraggableScrollControllerMixin on StatelessWidget {
-  ScrollController? getScrollController(BuildContext context) => DraggableScrollController.of(context);
+  ScrollController? getScrollController(BuildContext context) =>
+      DraggableScrollController.of(context);
 }

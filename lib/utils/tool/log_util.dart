@@ -5,7 +5,8 @@ import '../../config/app_env.dart' show appEnv, ENV;
 class LogUtil {
   static final Logger _logger = Logger(
     level: Level.debug,
-    printer: PrefixPrinter(PrettyPrinter(methodCount: 2, errorMethodCount: 8,colors: false)),
+    printer: PrefixPrinter(
+        PrettyPrinter(methodCount: 2, errorMethodCount: 8, colors: false)),
   );
 
   static void log(Level level, Object? data) {

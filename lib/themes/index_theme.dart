@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 // see https://material-foundation.github.io/material-theme-builder/
 
 
-part 'theme_blue.dart';
-part 'theme_red.dart';
+part 'theme_blue.dart';part 'theme_red.dart';
 
 class ExtendedColor {
   final Color seed, value;
@@ -40,4 +39,3 @@ class ColorFamily {
   final Color colorContainer;
   final Color onColorContainer;
 }
-
