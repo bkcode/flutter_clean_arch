@@ -41,7 +41,10 @@ dependencies:
 .pub-cache/hosted/pub.flutter-io.cn/uni_links-0.5.1/android/build.gradle
 ```java
 android {
-    namespace "name.avioli.unilinks" 
+    //设置空间名
+    namespace "name.avioli.unilinks"
+    //设置SDK版本 不能release会报错
+    compileSdkVersion 33        
 }
 ```
 .pub-cache/hosted/pub.flutter-io.cn/uni_links-0.5.1/android/src/main/java/name/avioli/unilinks/UniLinksPlugin.java
